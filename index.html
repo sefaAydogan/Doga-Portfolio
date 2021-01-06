@@ -10,116 +10,233 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   
   <style>
+
+body {
+ /* background-image: url('tasarım/backgroound.png');*/
+}
+
     /* Make the image fully responsive */
     .carousel-inner img {
       width: 100%;
-      height: 600px;
+      height: 100%;
     }
+    header {
+    height:80vh;
+    min-height:100px;
+    /*background-size:cover;*/
+    
+    background-image:url('tasarım/kolp.png');
+    }
+
+.hidden-spacer {
+    height: 56px
+}
+.header2{
+  padding: 30px;
+  text-align: center;
+  background: #fffffff3;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+}
+.text_paragraf{
+  padding: 15px;
+  text-align: center;
+  background: #fffffff3;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+}
+.text_onecıkanlar{
+  font-family: "Candara", Times, serif;
+  font-size: 40px;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  color: #000000;
+  font-weight: 700;
+  
+  font-style: italic;
+  font-variant: small-caps;
+  text-transform: uppercase;
+}
+.text_benkimim{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: underline solid rgb(0, 0, 0);
+  font-style: italic;
+  font-variant: small-caps;
+  text-transform: uppercase;
+}
+
     </style>
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-    <a class="navbar-brand" href="#">
-      <img src="logo.jpg" width="70px" height="70px" alt="">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-      <ul class="navbar-nav ">
-        <li class="nav-item ">
-          <a class="nav-link" href="index.html">Anasayfa</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="1.html">Projelerim</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="2.html">İletmişim</a>
-        </li>    
-      </ul>
-    </div>  
+  <nav class="navbar navbar-expand-sm fixed-top bg-dark navbar-dark">
+      <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="logo2.png" width="100px" height="100px" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbar1">
+              <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" style="font-size:x-large;"  href="Iletisim.html">Anasayfa</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" style="font-size:x-large;" href="Projeler.html">Projelerim</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" style="font-size:x-large;" href="Iletisim.html">İletişim</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
   </nav>
+  <div class="sticky-top bg-white hidden-spacer"></div>
+
+  <header>
+
+  </header>
+
+
+  
+
+
+
+
+  <div class="container pt-5">
+    <div class="row">
+      <div class="col-sm-6">      
+
+      </div>
+      <div class="col-sm-6">
+        <div class="header2">
+          <h2 class="text_benkimim"> BEN KİMİM!</h2>          
+        </div>
+        <div class="text_paragraf">
+          <p >Some example text some example text. Some example text some example text. Some example text some example text. Some example text some example text.</p>
+          <p >Some example text some example text. Some example text some example text. Some example text some example text. Some example text some example text.</p>
+        </div>
+      </div>
+    </div>  
+  </div>
+
+  <br>
+  <br>
   <br>
 
-<div class="container-fluid">
-  <div id="demo" class="carousel slide" data-ride="carousel">
-    <ul class="carousel-indicators">
-      <li data-target="#demo" data-slide-to="0" class="active"></li>
-      <li data-target="#demo" data-slide-to="1"></li>
-      <li data-target="#demo" data-slide-to="2"></li>
-    </ul>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="1.jpg" alt="Los Angeles" width="1100" height="500">
-        <div class="carousel-caption">
-          <h3>Los Angeles</h3>
-          <p>We had such a great time in LA!</p>
-        </div>   
-      </div>
-      <div class="carousel-item">
-        <img src="2.jpg" alt="Chicago" width="1100" height="500">
-        <div class="carousel-caption">
-          <h3>Chicago</h3>
-          <p>Thank you, Chicago!</p>
-        </div>   
-      </div>
-      <div class="carousel-item">
-        <img src="3.jpg" alt="New York" width="1100" height="500">
-        <div class="carousel-caption">
-          <h3>New York</h3>
-          <p>We love the Big Apple!</p>
-        </div>   
-      </div>
+  <div class="container pt-6">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="text_onecıkanlar" style="text-align: center;">Kullandığım Programlar</h1>
+      </div>      
     </div>
-    <a class="carousel-control-prev" href="#demo" data-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </a>
-    <a class="carousel-control-next" href="#demo" data-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </a>
+    <br>
+    <br>
+    <div class="row pt-6">
+      <div class="col-sm-4 " style="text-align: center;">
+        <div class="row">
+          <div class="col-sm-12 " style="text-align: center;">
+            <img src="tasarım/Adobe-Illustrator-Featured.jpg" width="100px" height="100px" alt="Adobe-Illustrator-Featured">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12" style="text-align: center;">
+            <h2>Adobe Illustrator</h2>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-sm-4" style="text-align: center;">
+
+        <div class="row">
+          <div class="col-sm-12 " style="text-align: center;">
+            <img src="tasarım/blender.jpg" width="100px" height="100px" alt="Adobe-Illustrator-Featured">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12" style="text-align: center;">
+            <h2>Blender 3D</h2>
+          </div>
+        </div>
+
+      </div>    
+      <div class="col-sm-4" style="text-align: center;">
+
+        <div class="row">
+          <div class="col-sm-12 " style="text-align: center;">
+            <img src="tasarım/ps.jpg" width="100px" height="100px" alt="Adobe-Illustrator-Featured">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12" style="text-align: center;">
+            <h2>Adobe Photoshop</h2>
+          </div>
+        </div>
+
+      </div>          
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+
+<div class="container pt-10">
+  <div class="row">
+    <div class="col-sm-12" style="text-align: center;">
+      <h1 class="text_onecıkanlar">ÖNE ÇIKANLAR</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12" style="text-align: center;" >
+
+      <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="tasarım/araba.png" alt="Los Angeles" width="200" height="200">
+            <div class="carousel-caption">
+              <h3>Bebi Arabası</h3>
+            </div>   
+          </div>
+          <div class="carousel-item">
+            <img src="tasarım/mazlum_kardanadam.png" alt="Chicago" width="200" height="200">
+            <div class="carousel-caption">
+              <h3>Mazlum Bir Kardan Adam</h3>
+            </div>   
+          </div>
+          <div class="carousel-item">
+            <img src="tasarım/mor_vazo.png" alt="New York" width="200" height="200">
+            <div class="carousel-caption">
+              <h3>Mor Şekerlik</h3>
+            </div>   
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+
+    </div>
   </div>
 </div>
 
 
-<div class="container-fluid m-t-3">
-  <div class="row">
-    <div class="col-sm-4">
 
-      <div class="card-deck">
-        <div class="card bg-primary">
-          <div class="card-body text-center">
-            <p class="card-text">Some text inside the first card</p>
-          </div>
-        </div>        
-      </div>
-
-    </div>
-    <div class="col-sm-4">
-      
-      <div class="card-deck">
-        <div class="card bg-warning">
-          <div class="card-body text-center">
-            <p class="card-text">Some text inside the second card</p>
-          </div>
-        </div>       
-      </div>
-
-    </div>
-    <div class="col-sm-4">
-
-      <div class="card-deck">
-        <div class="card bg-danger">
-          <div class="card-body text-center">
-            <p class="card-text">Some text inside the fourth card</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    
-  </div>  
-</div>
 
 
 
