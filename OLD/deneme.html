@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 33%; /* IE10 */
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Responsive Image Grid</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+
+<div class="container">
+  <img src="havuc.jpeg" style="width:30%;cursor:zoom-in"
+  onclick="document.getElementById('modal01').style.display='block'">
+
+  <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom">
+      <img src="havuc.jpeg" style="width:100%">
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="tasarım/araba.png" style="width:100%">
+    <img src="tasarım/ev.png" style="width:100%">
+    <img src="tasarım/atari.jpeg" style="width:100%">
+    <img src="tasarım/işlkjh.png" style="width:100%">
+    <img src="tasarım/kardan admmm.png" style="width:100%">
+    
+  </div>
+  <div class="column">
+    <img src="tasarım/PİK.png" style="width:100%">
+    <img src="tasarım/atari.jpeg" style="width:100%">
+    <img src="tasarım/TISS.png" style="width:100%">
+    <img src="tasarım/YARATIKK.png" style="width:100%">
+   
+  </div>  
+  <div class="column">
+    <img src="tasarım/masaa.png" style="width:100%">
+    <img src="tasarım/mor_vazo.png" style="width:100%">
+    <img src="tasarım/atari.jpeg" style="width:100%">
+    <img src="tasarım/piyon.png" style="width:100%">
+  </div>
+
+</div>
+
+
+
+
+
+</body>
+</html>
