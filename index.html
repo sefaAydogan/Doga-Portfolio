@@ -8,6 +8,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <title>İlke Doga Eygi</title>
+    <style>
+        input[type=checkbox] {
+            display: none;
+        }
+
+        .container img {
+            transition: transform 0.25s ease;
+            cursor: zoom-in;
+        }
+
+        input[type=checkbox]:checked~label>img {
+            transform: scale(5);
+            cursor: zoom-out;
+        }
+    </style>
 </head>
 
 <body>
@@ -15,9 +30,9 @@
         <section class="glass">
             <div class="dashboard">
                 <div class="user">
-                    <img src="./doya.png" alt="">
-                    <h3>İlke Doga Eygi</h3>
-                    <p>Designer</p>
+                    <img src="./doya.png" style="width: 60%" alt="">
+                    <h3>İlke Doğa Eygi</h3>
+                    <p>3D Artist / Graphic Designer</p>
                 </div>
                 <div class="links">
                     <div class="link">
@@ -44,15 +59,26 @@
                     <img src="./graphic-designer.png" style="width: 35%;" alt="">
                 </div>
             </div>
-            <div class="games">
+            <div class="main-content">
                 <div class="status">
-                    <img src="./tasarım/kolp.png" alt="">
+                    <img src="./tasarım2/kolp.png" alt="">
                 </div>
                 <div class="cards">
                     <div class="card">
                         <div class="card-info">
-                            <h2 class="">Ben KİMİM!</h2>
-                            <p>Benim adım Doğa. Ben bir Grafik Tasarımcıyım.</p>
+                            <h2 class="" style="text-align: center; margin-bottom: 10px">Ben KİMİM!</h2>
+                            <p>Benim adım Doğa. Genel olarak self-taught ve self-motivated bir şekilde 3D modellemeler
+                                yapıyorum. Aynı
+                                zamanda üniversite
+                                eğitimim sırasında aldığım grafik dersleri doğrultusunda grafik
+                                tasarım çalışmaları ile uğraşıyorum. Çalışmalarımda genel olarak <a
+                                    href="https://www.blender.org" style="text-decoration: none;">Blender</a>, <a
+                                    href="https://www.adobe.com/tr/products/illustrator.html"
+                                    style="text-decoration: none;">Adobe Illustrator</a>
+                                ve <a href="https://www.adobe.com/tr/products/photoshop.html"
+                                    style="text-decoration: none;">Adobe Photoshop</a>
+                                gibi programlar kullanmaktayım.
+                            </p>
                         </div>
                     </div>
                     <div class="card">
@@ -62,22 +88,54 @@
                             </div>
                             <div class="card-body">
                                 <div class="card-items">
-                                    <img src="./tasarım/Adobe-Illustrator-Featured.jpg" style="width: 30%" alt="">
+                                    <img src="./Adobe-Illustrator-Featured.jpg" style="width: 30%" alt="">
                                     <p>Adobe Illustrator</p>
                                 </div>
                                 <div class="card-items">
-                                    <img src="./tasarım/ps.jpg" style="width: 30%;" alt="">
+                                    <img src="./ps.jpg" style="width: 30%;" alt="">
                                     <p>Adobe Photoshop</p>
                                 </div>
                                 <div class="card-items">
-                                    <img src="./tasarım/blender.jpg" style="width: 30%;" alt="">
+                                    <img src="./blender-logo.png" style="width: 30%;" alt="">
                                     <p>Blender</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card">
-
+                        <div class="card-info">
+                            <div class="card-header">
+                                <h2 class="">Öne Çıkanlar</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-items">
+                                    <div class="container">
+                                        <input type="checkbox" id="zoomCheck">
+                                        <label for="zoomCheck">
+                                            <img src="./tasarım2/ODA.png" style="width: 100%; padding-left: 1rem;">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="card-items">
+                                    <div class="container">
+                                        <input type="checkbox" id="zoomCheck1">
+                                        <label for="zoomCheck1">
+                                            <img src="./tasarım2/mazlum_kardan_adam.png"
+                                                style="width: 100%; padding-left: 1rem;">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="card-items">
+                                    <div class="container">
+                                        <input type="checkbox" id="zoomCheck2">
+                                        <label for="zoomCheck2">
+                                            <img src="./tasarım2/oyun makinesi.png"
+                                                style="width: 100%; padding-left: 1rem;">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

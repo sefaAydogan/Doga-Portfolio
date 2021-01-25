@@ -7,7 +7,23 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-    <title>İlke Doga Eygi</title>
+    <title>İlke Doğa Eygi</title>
+    <style>
+        input[type=checkbox] {
+            display: none;
+        }
+
+        .container img {
+            transition: transform 0.5s ease;
+            cursor: zoom-in;
+        }
+
+        input[type=checkbox]:checked~label>img {
+            transform: scale(4);
+            cursor: zoom-out;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -15,9 +31,9 @@
         <section class="glass">
             <div class="dashboard">
                 <div class="user">
-                    <img src="./doya.png" alt="">
-                    <h3>İlke Doga Eygi</h3>
-                    <p>Designer</p>
+                    <img src="./doya.png" style="width: 60%" alt="">
+                    <h3>İlke Doğa Eygi</h3>
+                    <p>3D Artist / Graphic Designer</p>
                 </div>
                 <div class="links">
                     <div class="link">
@@ -44,55 +60,139 @@
                     <img src="./graphic-designer.png" style="width: 35%;" alt="">
                 </div>
             </div>
-            <div class="games">
+            <div class="main-content">
                 <div class="status">
                     <h1>Projelerim</h1>
 
                 </div>
                 <div class="cards">
                     <div class="card">
-                        <img src="./tasarım2/araba.png" alt="" onclick="window.open(this.src)">
-                        <img src="./tasarım2/TISS.png" alt="" onclick="window.open(this.src)">
-                        <img src="./tasarım2/ev.png" alt="" onclick="window.open(this.src)">
+                        <div class="container">
+                            <input type="checkbox" id="zoomCheck">
+                            <label for="zoomCheck">
+                                <img src="./tasarım2/sakız_makinesi.png" style="width: 100%; padding-left: 1rem;">
+                            </label>
+                        </div>
+                        <div class="container">
+                            <input type="checkbox" id="zoomCheck1">
+                            <label for="zoomCheck1">
+                                <img src="./tasarım2/deniz feneri.png" style="width: 100%; padding-left: 1rem;">
+                            </label>
+                        </div>
+                        <div class="container">
+                            <input type="checkbox" id="zoomCheck2">
+                            <label for="zoomCheck2">
+                                <img src="./tasarım2/ev2.png" style="width: 100%; padding-left: 1rem;">
+                            </label>
+                        </div>
                     </div>
-                    <div class=" card">
-                        <img src="./tasarım2/havuçç.png" alt="" onclick="window.open(this.src)">
-                        <img src="./tasarım2/işlkjh.png" alt="" onclick="window.open(this.src)">
-                        <img src="./tasarım2/kardan admmm.png" alt="" onclick="window.open(this.src)">
+                    <div class="card">
+                        <div class="container">
+                            <input type="checkbox" id="zoomCheck3">
+                            <label for="zoomCheck3">
+                                <img src="./tasarım2/uzay_mekiği.png" style="width: 100%; padding-left: 1rem;">
+                            </label>
+                        </div>
+                        <div class="container">
+                            <input type="checkbox" id="zoomCheck4">
+                            <label for="zoomCheck4">
+                                <img src="./tasarım2/kardan adam.png" style="width: 100%; padding-left: 1rem;">
+                            </label>
+                        </div>
+                        <div class="container">
+                            <input type="checkbox" id="zoomCheck5">
+                            <label for="zoomCheck5">
+                                <img src="./tasarım2/pikaçu.png" style="width: 100%; padding-left: 1rem;">
+                            </label>
+                        </div>
                     </div>
-                    <div class=" card">
-                        <img src="./tasarım2/masaa.png" alt="" onclick="window.open(this.src)">
-                        <img src="./tasarım2/mor_vazo.png" alt="" onclick="window.open(this.src)">
-                        <img src="./tasarım2/YARATIKK.png" alt="" onclick="window.open(this.src)">
+                    <div class="card">
+                        <div class="container">
+                            <input type="checkbox" id="zoomCheck6">
+                            <label for="zoomCheck6">
+                                <img src="./tasarım2/oyun makinesi.png" style="width: 100%; padding-left: 1rem;">
+                            </label>
+                        </div>
+                        <div class="container">
+                            <input type="checkbox" id="zoomCheck7">
+                            <label for="zoomCheck7">
+                                <img src="./tasarım2/araba.png" style="width: 100%; padding-left: 1rem;">
+                            </label>
+                        </div>
+                        <div class="container">
+                            <input type="checkbox" id="zoomCheck8">
+                            <label for="zoomCheck8">
+                                <img src="./tasarım2/ODA.png" style="width: 100%; padding-left: 1rem;">
+                            </label>
+                        </div>
                     </div>
-                    <div class=" card">
-                        <img src="./tasarım2/PİK.png" alt="" onclick="window.open(this.src)">
-                        <img src="./tasarım2/piyon.png" alt="" onclick="window.open(this.src)">
-                        <img src="./tasarım2/YARATIKK.png" alt="" onclick="window.open(this.src)">
+                    <div class="card">
+                        <div class="container">
+                            <input type="checkbox" id="zoomCheck9">
+                            <label for="zoomCheck9">
+                                <img src="./tasarım2/masaa.png" style="width: 100%; padding-left: 1rem;">
+                            </label>
+                        </div>
+                        <div class="container">
+                            <input type="checkbox" id="zoomCheck10">
+                            <label for="zoomCheck10">
+                                <img src="./tasarım2/mor_vazo.png" style="width: 100%;padding-left: 1rem;">
+                            </label>
+                        </div>
+                        <div class="container">
+                            <input type="checkbox" id="zoomCheck11">
+                            <label for="zoomCheck11">
+                                <img src="./tasarım2/domuz.png" style="width: 100%;padding-left: 1rem;">
+                            </label>
+                        </div>
                     </div>
-                    <div class=" card">
-                        <img src="./tasarım2/masaa.png" alt="" onclick="window.open(this.src)">
-                        <img src="./tasarım2/mor_vazo.png" alt="" onclick="window.open(this.src)">
-                        <img src="./tasarım2/YARATIKK.png" alt="" onclick="window.open(this.src)">
+                    <div class="card">
+                        <div class="container">
+                            <input type="checkbox" id="zoomCheck12">
+                            <label for="zoomCheck12">
+                                <img src="./tasarım2/maymun.png" style="width: 100%; padding-left: 1rem;">
+                            </label>
+                        </div>
+                        <div class="container">
+                            <input type="checkbox" id="zoomCheck13">
+                            <label for="zoomCheck13">
+                                <img src="./tasarım2/havuç.png" style="width: 100%; padding-left: 1rem;">
+                            </label>
+                        </div>
+                        <div class="container">
+                            <input type="checkbox" id="zoomCheck14">
+                            <label for="zoomCheck14">
+                                <img src="./tasarım2/silah.png" style="width: 100%; padding-left: 1rem;">
+                            </label>
+                        </div>
                     </div>
+                    <div class="card">
+                        <div class="container">
+                            <input type="checkbox" id="zoomCheck15">
+                            <label for="zoomCheck15">
+                                <img src="./tasarım2/ev.png" style="width: 100%; padding-left: 1rem;">
+                            </label>
+                        </div>
+                        <div class="container">
+                            <input type="checkbox" id="zoomCheck16">
+                            <label for="zoomCheck16">
+                                <img src="./tasarım2/YARATIK.png" style="width: 100%; padding-left: 1rem;">
+                            </label>
+                        </div>
+                        <div class="container">
+                            <input type="checkbox" id="zoomCheck17">
+                            <label for="zoomCheck17">
+                                <img src="./tasarım2/balonlu kız.png" style="width: 100%; padding-left: 1rem;">
+                            </label>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
     </main>
-    <div class=" circle1">
-    </div>
+    <div class="circle1"></div>
     <div class="circle2"></div>
-
-    <script>
-        function imgWindow() {
-            window.open("image")
-        }
-    </script>
-
-
-
-
-
 
 </body>
 
