@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <title>İlke Doga Eygi</title>
     <style>
@@ -103,35 +105,20 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-info">
-                            <div class="card-header">
+                        <div class="mycarousel">
+                            <div class="carousel-header">
                                 <h2 class="">Highlights</h2>
                             </div>
-                            <div class="card-body">
-                                <div class="card-items">
-                                    <div class="container">
-                                        <input type="checkbox" id="zoomCheck">
-                                        <label for="zoomCheck">
-                                            <img src="./tasarım2/ODA.png" style="width: 100%; padding-left: 1rem;">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="card-items">
-                                    <div class="container">
-                                        <input type="checkbox" id="zoomCheck1">
-                                        <label for="zoomCheck1">
-                                            <img src="./tasarım2/roomWithStairs.png"
-                                                style="width: 100%; padding-left: 1rem;">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="card-items">
-                                    <div class="container">
-                                        <input type="checkbox" id="zoomCheck2">
-                                        <label for="zoomCheck2">
-                                            <img src="./tasarım2/IceCreamShop.png"
-                                                style="width: 100%; padding-left: 1rem;">
-                                        </label>
+                            <div class="carousel-body">
+                                <div class="carousel-container" id="slider-container">
+                                    <i id="prevBtn"><i class="fas fa-arrow-left"></i></i>
+                                    <i id="nextBtn"><i class="fas fa-arrow-right"></i></i>
+                                    <div class="carousel-slide" id="slider-slide">
+                                        <img src="./tasarım2/IceCreamShop.png" id="lastClone" alt="">
+                                        <img src="./tasarım2/ODA.png" alt="">
+                                        <img src="./tasarım2/roomWithStairs.png" alt="">
+                                        <img src="./tasarım2/IceCreamShop.png" alt="">
+                                        <img src="./tasarım2/ODA.png" id="firstClone" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -143,6 +130,7 @@
     </main>
     <div class="circle1"></div>
     <div class="circle2"></div>
+    <script src="index.js"></script>
 </body>
 
 </html>
